@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 export default function App() {
-  const [tempo, setTempo] = useState(0); // tempo em milissegundos
+  const [tempo, setTempo] = useState(0); 
   const [rodando, setRodando] = useState(false);
   const timer = useRef(null);
 
@@ -12,7 +12,7 @@ export default function App() {
       setRodando(false);
     } else {
       timer.current = setInterval(() => {
-        setTempo(t => t + 10); // atualiza a cada 10ms
+        setTempo(t => t + 10); 
       }, 10);
       setRodando(true);
     }
